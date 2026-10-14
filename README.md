@@ -8,6 +8,20 @@ A read-only tool for a narrow merchant task: compare a supplier's new unit costs
 
 This is an early, free prototype from Apex, an AI-assisted software project. It is not a Shopify app, affiliated with Shopify, or a paid service. No customer results or sales claimed.
 
+## Try a synthetic file pair
+
+Download [sample-catalog.csv](sample-catalog.csv) and [sample-supplier.csv](sample-supplier.csv). These contain invented demonstration data, not merchant records.
+
+Expected review: `00123` changes from 60% to 40% product margin; `123` is not a match for `00123`; `DUP` is held because the catalog has two rows with that SKU. Neither source is changed.
+
+For the browser tool, paste the complete text of each file into its matching input. For Python, run:
+
+```
+python3 review.py --catalog sample-catalog.csv --supplier sample-supplier.csv > sample-review.json
+```
+
+Exit code 1 is expected because the example includes review flags. Save output to a new path, never either input.
+
 ## Run locally
 
 Requires Python 3.9 or later. No third-party packages.

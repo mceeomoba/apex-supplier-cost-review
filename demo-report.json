@@ -1,0 +1,48 @@
+{
+  "version": "0.1.0",
+  "catalog_rows": 4,
+  "supplier_rows": 5,
+  "catalog_blank_sku_rows": 0,
+  "catalog_duplicate_skus": [
+    "DUP"
+  ],
+  "scope": "Exact SKU cost review only. Same currency assumed. Excludes fees, shipping, taxes, discounts and returns. Not profit or a Shopify import file.",
+  "results": [
+    {
+      "supplier_row": 2,
+      "sku": "00123",
+      "status": "MATCHED_REVIEW_ONLY",
+      "reason": "Human approval required; no import file generated",
+      "selling_price": "20.00",
+      "old_cost": "8.00",
+      "new_cost": "12.00",
+      "cost_change": "4.00",
+      "old_product_margin_percent": "60.00",
+      "new_product_margin_percent": "40.00"
+    },
+    {
+      "supplier_row": 3,
+      "sku": "123",
+      "status": "REVIEW",
+      "reason": "No exact catalog SKU match; leading zeros and case are preserved"
+    },
+    {
+      "supplier_row": 4,
+      "sku": "DUP",
+      "status": "REVIEW",
+      "reason": "Duplicate catalog SKU; no guess made"
+    },
+    {
+      "supplier_row": 5,
+      "sku": "ZERO",
+      "status": "REVIEW",
+      "reason": "Zero selling price; margin percentage undefined"
+    },
+    {
+      "supplier_row": 6,
+      "sku": "MISSING",
+      "status": "REVIEW",
+      "reason": "No exact catalog SKU match; leading zeros and case are preserved"
+    }
+  ]
+}

@@ -1,5 +1,9 @@
 # Apex Supplier Cost Review
 
+[Open the free browser tool](https://mceeomoba.github.io/apex-supplier-cost-review/). Paste CSV text or load the synthetic example. No Python installation or store login required.
+
+The browser version has fixed input headers; the Python version below supports custom header names. Both are read-only prototypes with synthetic tests, not merchant validation.
+
 A read-only tool for a narrow merchant task: compare a supplier's new unit costs against a current catalog and see which exact SKU matches would reduce product margin. No Shopify login, installation into your store, or data upload.
 
 This is an early, free prototype from Apex, an AI-assisted software project. It is not a Shopify app, affiliated with Shopify, or a paid service. No customer results or sales claimed.
